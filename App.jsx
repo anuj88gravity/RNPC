@@ -3,6 +3,8 @@ import React from 'react'
 import Home from './Home'
 import {Provider} from 'react-redux';
 import store from './store';
+import DashboardScreen from './src/screens/DashboardScreen';
+import DashboardScreen2 from './src/screens/DashboardScreen2';
 
 
 const App = () => {
@@ -11,6 +13,8 @@ const App = () => {
    
       <Provider store={store}>
         <Home/>
+        <DashboardScreen/>
+        <DashboardScreen2/>
       </Provider>
    
   )
